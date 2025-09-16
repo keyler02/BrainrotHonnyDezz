@@ -17,7 +17,7 @@ screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local mainFrame = Instance.new("Frame", screenGui)
 mainFrame.Size = UDim2.new(0, 320, 0, 380) -- Increased height to accommodate new buttons
 mainFrame.Position = UDim2.new(0, 20, 0, 20)
-mainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+mainFrame.BackgroundColor3 = Color3.fromRGB(74, 8, 1)
 mainFrame.BorderSizePixel = 0
 local mainCorner = Instance.new("UICorner", mainFrame)
 mainCorner.CornerRadius = UDim.new(0, 16)
@@ -26,7 +26,7 @@ mainCorner.CornerRadius = UDim.new(0, 16)
 local purpleBorder = Instance.new("Frame", mainFrame)
 purpleBorder.Position = UDim2.new(0, -2, 0, -2)
 purpleBorder.Size = UDim2.new(1, 4, 1, 4)
-purpleBorder.BackgroundColor3 = Color3.fromRGB(138, 43, 226)
+purpleBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 226)
 purpleBorder.ZIndex = -1
 local borderCorner = Instance.new("UICorner", purpleBorder)
 borderCorner.CornerRadius = UDim.new(0, 18)
@@ -39,7 +39,7 @@ local titleLabel = Instance.new("TextLabel", titleBar)
 titleLabel.Size = UDim2.new(1, -55, 1, 0)
 titleLabel.Position = UDim2.new(0, 15, 0, 0)
 titleLabel.BackgroundTransparency = 1
-titleLabel.Text = "⚡ HONNY HUB"
+titleLabel.Text = "Mileniums hub br"
 titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 titleLabel.Font = Enum.Font.GothamBold
 titleLabel.TextSize = 18
@@ -151,7 +151,7 @@ local creditsLabel = Instance.new("TextLabel", moreContent)
 creditsLabel.Size = UDim2.new(1, 0, 0, 40)
 creditsLabel.Position = UDim2.new(0, 0, 0, 105) -- Moved up from 130 to 105
 creditsLabel.BackgroundTransparency = 1
-creditsLabel.Text = "💜 Credits to HonnyDezz"
+creditsLabel.Text = "Credits to Keyzorxz"
 creditsLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 creditsLabel.Font = Enum.Font.GothamBold
 creditsLabel.TextSize = 14
@@ -307,7 +307,7 @@ godmodeBtn.MouseButton1Click:Connect(function()
         end)
         
         -- Visual feedback
-        godmodeBtn.Text = "⚡ GOD MODE ON"
+        godmodeBtn.Text = " GOD MODE ON"
         godmodeBtn.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
     else
         -- Disable god mode
@@ -315,7 +315,7 @@ godmodeBtn.MouseButton1Click:Connect(function()
         humanoid.Health = 100
         
         -- Visual feedback
-        godmodeBtn.Text = "⚡ GOD MODE"
+        godmodeBtn.Text = "GOD MODE"
         godmodeBtn.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     end
 end)
